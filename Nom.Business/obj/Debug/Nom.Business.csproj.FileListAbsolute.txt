@@ -1,0 +1,12 @@
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.Business.dll
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.Business.pdb
+F:\Work\Personal\Nom\Nom.Business\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Personal\Nom\Nom.Business\obj\Debug\Nom.Business.dll
+F:\Work\Personal\Nom\Nom.Business\obj\Debug\Nom.Business.pdb
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.Common.dll
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.DataAccess.dll
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.DataAccess.pdb
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Nom.Common.pdb
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Newtonsoft.Json.dll
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Newtonsoft.Json.pdb
+F:\Work\Personal\Nom\Nom.Business\bin\Debug\Newtonsoft.Json.xml
