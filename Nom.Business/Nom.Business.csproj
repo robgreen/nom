@@ -51,8 +51,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GroupHelper.cs" />
     <Compile Include="Objects\WLPresence.cs" />
     <Compile Include="Providers\NomMembershipProvider.cs" />
+    <Compile Include="SessionHelper.cs" />
     <Compile Include="SignUpManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WindowsLiveHelper.cs" />

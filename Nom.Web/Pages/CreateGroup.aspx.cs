@@ -10,8 +10,8 @@ namespace Nom.Web.Pages
 			string name = null;
 			string profile = null;
 			string postalCode = null;
-			float? lat;
-			float? lng;
+			float? lat = null;
+			float? lng = null;
 
 			if (!string.IsNullOrEmpty(txtName.Text))
 				name = txtName.Text;
@@ -24,7 +24,7 @@ namespace Nom.Web.Pages
 			if (!string.IsNullOrEmpty(hdnLat.Value))
 				lng = float.Parse(hdnLng.Value);
 
-			// SignUpManager.BeginSignUpRequest(email, password, forename, surname, wlOptIn);
+			GroupHelper.BeginCreateGroupRequest(name, profile, postalCode, lat, lng);
 		}
 	}
 }

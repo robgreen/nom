@@ -73,8 +73,10 @@ namespace Nom.DataAccess.Objects
 		public Group(IDataReader reader)
 		{
 			_id = (int)reader["GroupID"];
-			_geoLatitude = (float?)reader["GeoLat"];
-			_geoLongitude = (float?)reader["GeoLng"];
+			if (!reader.IsDBNull(reader.GetOrdinal("GeoLat")))
+				_geoLatitude = float.Parse(reader["GeoLat"].ToString());
+			if (!reader.IsDBNull(reader.GetOrdinal("GeoLng")))
+				_geoLongitude = float.Parse(reader["GeoLng"].ToString());
 			_name = reader["Name"] as string;
 			_profile = reader["Profile"] as string;
 			_postalCode = reader["PostalCode"] as string;

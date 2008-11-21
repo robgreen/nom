@@ -5,3 +5,10 @@ F:\Work\Personal\Nom\Nom.DataAccess\bin\Debug\Nom.Common.dll
 F:\Work\Personal\Nom\Nom.DataAccess\bin\Debug\Nom.Common.pdb
 F:\Work\Personal\Nom\Nom.DataAccess\obj\Debug\Nom.DataAccess.dll
 F:\Work\Personal\Nom\Nom.DataAccess\obj\Debug\Nom.DataAccess.pdb
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Nom.DataAccess.dll
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Nom.DataAccess.pdb
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Nom.Common.dll
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Nom.Common.pdb
+F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\ResolveAssemblyReference.cache
+F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\Nom.DataAccess.dll
+F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\Nom.DataAccess.pdb
