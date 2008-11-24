@@ -71,13 +71,16 @@ namespace Nom.DataAccess.Objects
 		}
 		public User(IDataReader reader)
 		{
-			_id = (int)reader["UserID"];
-			_email = reader["Email"] as string;
-			_forename = reader["Forename"] as string;
-			_surname = reader["Surname"] as string;
-			_windowsLiveEnabled = (bool)reader["WindowsLiveEnabled"];
-			_windowsLiveId = reader["WindowsLiveID"] as string;
-			_createdDate = (DateTime)reader["CreatedDate"];
+			while (reader.Read())
+			{
+				_id = (int)reader["UserID"];
+				_email = reader["Email"] as string;
+				_forename = reader["Forename"] as string;
+				_surname = reader["Surname"] as string;
+				_windowsLiveEnabled = (bool)reader["WindowsLiveEnabled"];
+				_windowsLiveId = reader["WindowsLiveID"] as string;
+				_createdDate = (DateTime)reader["CreatedDate"];
+			}
 		}
 		#endregion
 

@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace Nom.Web.Tests
 {
-	public partial class GMGeoCode : System.Web.UI.Page
+	public partial class GMGeoCode : Nom.Web.Base.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

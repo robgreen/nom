@@ -12,3 +12,6 @@ F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Nom.Common.pdb
 F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\ResolveAssemblyReference.cache
 F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\Nom.DataAccess.dll
 F:\Work\Personal\Nom.current\Nom.DataAccess\obj\Debug\Nom.DataAccess.pdb
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Newtonsoft.Json.dll
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Newtonsoft.Json.pdb
+F:\Work\Personal\Nom.current\Nom.DataAccess\bin\Debug\Newtonsoft.Json.xml

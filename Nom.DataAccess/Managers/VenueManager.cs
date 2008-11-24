@@ -104,6 +104,39 @@ namespace Nom.DataAccess.Managers
 			return venues;
 		}
 
+		public static Dictionary<Venue, int> GetVenuesForUser(User user)
+		{
+			return GetVenuesForUser(user, false);
+		}
+		public static Dictionary<Venue, int> GetVenuesForUser(User user, bool limit)
+		{
+			return GetVenuesForUser(user.ID.Value, limit);
+		}
+		public static Dictionary<Venue, int> GetVenuesForUser(int userId, bool limit)
+		{
+			// TODO: Fix the way this is achieved and also the rank etc
+
+			Dictionary<Venue, int> userVenues = new Dictionary<Venue, int>();
+
+			using (SqlConnection conn = Helper.GetConnection())
+			{
+				using (SqlCommand cmd = new SqlCommand(Constants.StoredProcedures.VenueManager.GetUserRecentVenues, conn))
+				{
+					cmd.CommandType = CommandType.StoredProcedure;
+					cmd.Parameters.AddWithValue("@UserID", userId);
+					conn.Open();
+
+					using (IDataReader reader = cmd.ExecuteReader())
+					{
+						while (reader.Read())
+							userVenues.Add(new Venue(reader), 0);
+					}
+				}
+			}
+
+			return userVenues;
+		}
+
 		public static void RemoveVenue(Venue venue)
 		{
 			if (venue.ID.HasValue)

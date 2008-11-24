@@ -36,6 +36,7 @@ namespace Nom.DataAccess
 			{
 				public const string AddVenue = "AddVenue";
 				public const string AddVenueRank = "AddVenueRank";
+				public const string GetUserRecentVenues = "GetUserRecentVenues";
 				public const string GetVenue = "GetVenue";
 				public const string GetVenues = "GetVenues";
 				public const string RemoveVenue = "RemoveVenue";

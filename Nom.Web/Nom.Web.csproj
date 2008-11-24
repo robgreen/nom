@@ -61,12 +61,28 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Base\BaseViewPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Controls\Head.ascx.cs">
       <DependentUpon>Head.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\Head.ascx.designer.cs">
       <DependentUpon>Head.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\View\User\RecentVenues.ascx.cs">
+      <DependentUpon>RecentVenues.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View\User\RecentVenues.ascx.designer.cs">
+      <DependentUpon>RecentVenues.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -103,12 +119,33 @@
     <Compile Include="Pages\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\View\GroupView.aspx.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\View\GroupView.aspx.designer.cs">
+      <DependentUpon>GroupView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Thanks.aspx.cs">
       <DependentUpon>Thanks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Thanks.aspx.designer.cs">
       <DependentUpon>Thanks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\View\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\View\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\View\VenueView.aspx.cs">
+      <DependentUpon>VenueView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\View\VenueView.aspx.designer.cs">
+      <DependentUpon>VenueView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\WLPrivacy.aspx.cs">
       <DependentUpon>WLPrivacy.aspx</DependentUpon>
@@ -125,6 +162,7 @@
       <DependentUpon>WLReturn.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Tests\GMGeoCode.aspx.cs">
       <DependentUpon>GMGeoCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -167,7 +205,11 @@
     <Content Include="Tests\WLUserPresence.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\View\User\RecentVenues.ascx" />
     <Content Include="MasterPages\Nom.Master" />
+    <Content Include="Pages\View\GroupView.aspx" />
+    <Content Include="Pages\View\UserView.aspx" />
+    <Content Include="Pages\View\VenueView.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -185,12 +227,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4526</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost:4600/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>

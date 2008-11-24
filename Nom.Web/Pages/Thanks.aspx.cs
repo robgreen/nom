@@ -13,7 +13,7 @@ using System.Xml.Linq;
 
 namespace Nom.Web.Pages
 {
-	public partial class Thanks : System.Web.UI.Page
+	public partial class Thanks : Nom.Web.Base.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

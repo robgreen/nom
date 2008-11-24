@@ -33,8 +33,6 @@ namespace Nom.Business
 			{
 				throw new Exception("User has not activated Windows Live support.");
 			}
-
-			return null;
 		}
 
 		private static string GetWindowsLivePresenceURL(string wlId)

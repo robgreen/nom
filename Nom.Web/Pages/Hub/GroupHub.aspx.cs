@@ -8,7 +8,7 @@ using Nom.DataAccess.Objects;
 
 namespace Nom.Web.Pages.Hub
 {
-	public partial class GroupHub : System.Web.UI.Page
+	public partial class GroupHub : Nom.Web.Base.BasePage
 	{
 		protected override void OnLoad(EventArgs e)
 		{

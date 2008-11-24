@@ -71,9 +71,12 @@ namespace Nom.DataAccess.Objects
 			_name = reader["Name"] as string;
 			_profile = reader["Profile"] as string;
 			_postalCode = reader["PostalCode"] as string;
-			_priceAverage = (float?)reader["PriceAverage"];
-			_rankCount = (int?)reader["RankCount"];
-			_rankAverage = (int?)reader["RankAverage"];
+			if (!reader.IsDBNull(reader.GetOrdinal("PriceAverage")))
+				_priceAverage = float.Parse(reader["PriceAverage"].ToString());
+			if (reader.GetSchemaTable().Columns.Contains("RankCount"))
+				_rankCount = (int?)reader["RankCount"];
+			if (reader.GetSchemaTable().Columns.Contains("RankAverage"))
+				_rankAverage = (int?)reader["RankAverage"];
 			_createdDate = (DateTime)reader["CreatedDate"];
 		}
 		#endregion

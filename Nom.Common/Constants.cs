@@ -19,6 +19,10 @@ namespace Nom.Common
 		{
 			public const string Nom = "NomMembershipProvider";
 		}
+		public class RequestParameters
+		{
+			public const string ItemID = "id";
+		}
 		public class Session
 		{
 			public const string CurrentUser = "cu";

@@ -28,10 +28,12 @@
 		if (Nom.Geo.LastQuery != null)
 		{
 			var txtLat = $("#hdnLat")[0];
-			if (txtLat != null) txtLat.value = Nom.Geo.LastQuery.Lat;
+			if (txtLat != null)
+				txtLat.value = Nom.Geo.LastQuery.Lat;
 
 			var txtLng = $("#hdnLng")[0];
-			if (txtLng != null) txtLng.value = Nom.Geo.LastQuery.Lng;
+			if (txtLng != null)
+				txtLng.value = Nom.Geo.LastQuery.Lng;
 		}
 	}
 }

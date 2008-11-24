@@ -11,7 +11,7 @@ using Nom.DataAccess.Objects;
 
 namespace Nom.Web.Tests
 {
-	public partial class WLUserPresence : System.Web.UI.Page
+	public partial class WLUserPresence : Nom.Web.Base.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

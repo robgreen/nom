@@ -31,10 +31,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Dependencies\Newtonsoft.Json\Bin\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -52,7 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GroupHelper.cs" />
-    <Compile Include="Objects\WLPresence.cs" />
     <Compile Include="Providers\NomMembershipProvider.cs" />
     <Compile Include="SessionHelper.cs" />
     <Compile Include="SignUpManager.cs" />
@@ -68,6 +63,9 @@
       <Project>{6021F34A-F6D2-43EA-9BAA-13BCE25CFBE4}</Project>
       <Name>Nom.DataAccess</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Objects\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

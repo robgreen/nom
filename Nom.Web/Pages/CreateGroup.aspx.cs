@@ -3,7 +3,7 @@ using Nom.Business;
 
 namespace Nom.Web.Pages
 {
-	public partial class CreateGroup : System.Web.UI.Page
+	public partial class CreateGroup : Nom.Web.Base.BasePage
 	{
 		public void btnSubmit_Click(object sender, EventArgs e)
 		{

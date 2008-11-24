@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\Newtonsoft.Json\Bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Core">
@@ -51,10 +55,11 @@
     <Compile Include="Managers\VenueManager.cs" />
     <Compile Include="Managers\GroupManager.cs" />
     <Compile Include="Managers\UserManager.cs" />
-    <Compile Include="Objects\Venue.cs" />
     <Compile Include="Objects\Group.cs" />
     <Compile Include="Objects\User.cs" />
+    <Compile Include="Objects\Venue.cs" />
     <Compile Include="Objects\VenueRank.cs" />
+    <Compile Include="Objects\WLPresence.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

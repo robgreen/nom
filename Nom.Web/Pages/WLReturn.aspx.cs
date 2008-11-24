@@ -4,7 +4,7 @@ using Nom.Common;
 
 namespace Nom.Web.Pages
 {
-	public partial class WLReturn : System.Web.UI.Page
+	public partial class WLReturn : Nom.Web.Base.BasePage
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{

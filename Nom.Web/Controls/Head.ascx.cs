@@ -9,7 +9,7 @@ using Nom.Common;
 
 namespace Nom.Web.Controls
 {
-	public partial class Head : System.Web.UI.UserControl
+	public partial class Head : Nom.Web.Base.BaseControl
 	{
 		protected override void OnLoad(EventArgs e)
 		{
