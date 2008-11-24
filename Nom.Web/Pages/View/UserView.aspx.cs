@@ -45,14 +45,13 @@ namespace Nom.Web.Pages.View
 				ViewUser = UserManager.GetUser(ItemID.Value);
 
 				if (ViewUser != null)
-				{
 					ViewUserPresence = WindowsLiveHelper.GetWindowsLivePresence(ViewUser);
-				}
 			}
 		}
 		private void BindControls()
 		{
 			ctrlRecentVenues.User = ViewUser;
+			ctrlGroups.User = ViewUser;
 		}
 		private void SetUserDetails()
 		{

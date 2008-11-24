@@ -77,6 +77,13 @@
     <Compile Include="Controls\Head.ascx.designer.cs">
       <DependentUpon>Head.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\View\User\Groups.ascx.cs">
+      <DependentUpon>Groups.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View\User\Groups.ascx.designer.cs">
+      <DependentUpon>Groups.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\View\User\RecentVenues.ascx.cs">
       <DependentUpon>RecentVenues.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,6 +212,7 @@
     <Content Include="Tests\WLUserPresence.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\View\User\Groups.ascx" />
     <Content Include="Controls\View\User\RecentVenues.ascx" />
     <Content Include="MasterPages\Nom.Master" />
     <Content Include="Pages\View\GroupView.aspx" />

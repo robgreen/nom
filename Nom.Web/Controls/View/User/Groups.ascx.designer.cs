@@ -8,54 +8,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nom.Web.Pages.View {
+namespace Nom.Web.Controls.View.User {
     
     
-    public partial class UserView {
+    public partial class Groups {
         
         /// <summary>
-        /// litTitle control.
+        /// rptGroups control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litTitle;
+        protected global::System.Web.UI.WebControls.Repeater rptGroups;
         
         /// <summary>
-        /// imgWLIcon control.
+        /// plhNoGroups control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgWLIcon;
+        protected global::System.Web.UI.WebControls.PlaceHolder plhNoGroups;
         
         /// <summary>
-        /// litJoined control.
+        /// litUserFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litJoined;
-        
-        /// <summary>
-        /// ctrlRecentVenues control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Nom.Web.Controls.View.User.RecentVenues ctrlRecentVenues;
-        
-        /// <summary>
-        /// ctrlGroups control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Nom.Web.Controls.View.User.Groups ctrlGroups;
+        protected global::System.Web.UI.WebControls.Literal litUserFirstName;
     }
 }

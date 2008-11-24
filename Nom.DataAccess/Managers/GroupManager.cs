@@ -111,6 +111,33 @@ namespace Nom.DataAccess.Managers
 			return groups;
 		}
 
+		public static List<Group> GetGroupsForUser(User user)
+		{
+			return GetGroupsForUser(user.ID.Value);
+		}
+		public static List<Group> GetGroupsForUser(int userId)
+		{
+			List<Group> groups = new List<Group>();
+
+			using (SqlConnection conn = Helper.GetConnection())
+			{
+				using (SqlCommand cmd = new SqlCommand(Constants.StoredProcedures.GroupManager.GetUserGroups, conn))
+				{
+					cmd.CommandType = CommandType.StoredProcedure;
+					cmd.Parameters.AddWithValue("@UserID", userId);
+					conn.Open();
+
+					using (IDataReader reader = cmd.ExecuteReader())
+					{
+						while (reader.Read())
+							groups.Add(new Group(reader));
+					}
+				}
+			}
+
+			return groups;
+		}
+
 		public static List<User> GetUsers(int groupId)
 		{
 			return UserManager.GetUsersByGroup(groupId);

@@ -19,6 +19,7 @@ namespace Nom.DataAccess
 				public const string AddGroupUser = "AddGroupUser";
 				public const string GetGroup = "GetGroup";
 				public const string GetGroups = "GetGroups";
+				public const string GetUserGroups = "GetUserGroups";
 				public const string RemoveGroup = "RemoveGroup";
 				public const string RemoveGroupUser = "RemoveGroupUser";
 				public const string UpdateGroup = "UpdateGroup";
