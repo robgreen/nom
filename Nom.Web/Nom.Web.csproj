@@ -152,6 +152,7 @@
     <Content Include="Controls\Head.ascx" />
     <Content Include="Pages\CreateGroup.aspx" />
     <Content Include="Pages\Hub\GroupHub.aspx" />
+    <Content Include="Resources\JS\jquery-1.2.6.min.js" />
     <Content Include="Resources\JS\Nom.Geo.js" />
     <Content Include="Resources\JS\Nom.Groups.js" />
     <Content Include="Resources\JS\Nom.js" />
