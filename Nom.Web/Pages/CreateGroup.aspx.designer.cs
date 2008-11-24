@@ -14,24 +14,6 @@ namespace Nom.Web.Pages {
     public partial class CreateGroup {
         
         /// <summary>
-        /// Head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Nom.Web.Controls.Head Head;
-        
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
         /// hdnLat control.
         /// </summary>
         /// <remarks>

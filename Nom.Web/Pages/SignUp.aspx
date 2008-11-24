@@ -1,14 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="Nom.Web.Pages.SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/Nom.Master" CodeBehind="SignUp.aspx.cs" Inherits="Nom.Web.Pages.SignUp" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
-<head runat="server">
-    <title>Sign Up</title>
-</head>
-<body>
-	<form id="form1" runat="server">
-	<h1>Nom</h1>
+<asp:Content ContentPlaceHolderID="cphContent" runat="server">
 	<h2>Sign Up</h2>
 	<div class="fieldRow">
 		<asp:Label ID="lblForename" AssociatedControlID="txtForename" runat="server">Forename:</asp:Label>
@@ -31,6 +23,4 @@
 		<asp:CheckBox ID="chkWLOptIn" Text="true" runat="server" />
 	</div>
 	<asp:Button ID="btnSubmit" OnClick="btnSubmit_Click" Text="Can has me some nom?" runat="server" />
-	</form>
-</body>
-</html>
+</asp:Content>
