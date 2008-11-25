@@ -22,6 +22,7 @@ namespace Nom.Common
 		public class RequestParameters
 		{
 			public const string ItemID = "id";
+			public const string LogOut = "logout";
 		}
 		public class Session
 		{

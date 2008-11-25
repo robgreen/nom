@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
+using Nom.Common;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 
@@ -21,7 +22,7 @@ namespace Nom.Web.Controls.View.User
 		{
 			base.OnLoad(e);
 
-			List<Group> groups = GroupManager.GetGroupsForUser(User);
+			List<Nom.DataAccess.Objects.Group> groups = GroupManager.GetGroupsForUser(User);
 
 			if (groups.Count > 0)
 			{
@@ -45,10 +46,12 @@ namespace Nom.Web.Controls.View.User
 				|| e.Item.ItemType == ListItemType.AlternatingItem
 				|| e.Item.ItemType == ListItemType.SelectedItem)
 			{
-				Group group = (Group)e.Item.DataItem;
+				Nom.DataAccess.Objects.Group group = (Nom.DataAccess.Objects.Group)e.Item.DataItem;
 
+				HyperLink hypGroupProfile = (HyperLink)e.Item.FindControl("hypGroupProfile");
 				Literal litTitle = (Literal)e.Item.FindControl("litTitle");
 
+				hypGroupProfile.NavigateUrl = LinkHelper.GetViewGroupURL(group.ID.Value);
 				litTitle.Text = group.Name;
 			}
 		}

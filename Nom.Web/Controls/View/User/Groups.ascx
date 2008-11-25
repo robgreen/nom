@@ -7,7 +7,7 @@
 		</HeaderTemplate>
 		<ItemTemplate>
 				<li>
-					<span class="title"><asp:Literal ID="litTitle" runat="server" /></span>
+					<span class="title"><asp:HyperLink ID="hypGroupProfile" runat="server"><asp:Literal ID="litTitle" runat="server" /></asp:HyperLink></span>
 				</li>
 		</ItemTemplate>
 		<FooterTemplate>

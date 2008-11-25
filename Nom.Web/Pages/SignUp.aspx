@@ -16,7 +16,7 @@
 	</div>
 	<div class="fieldRow">
 		<asp:Label ID="lblPassword" AssociatedControlID="txtPassword" runat="server">Password:</asp:Label>
-		<asp:TextBox ID="txtPassword" TextMode="SingleLine" runat="server" />
+		<asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
 	</div>
 	<div class="fieldRow">
 		<asp:Label ID="lblWLOptIn" AssociatedControlID="chkWLOptIn" runat="server">Receive alerts via Windows Live Messenger:</asp:Label>

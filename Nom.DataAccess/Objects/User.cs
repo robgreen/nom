@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Text;
+using System.Web.Security;
 using Nom.DataAccess.Managers;
 
 namespace Nom.DataAccess.Objects
@@ -71,16 +72,13 @@ namespace Nom.DataAccess.Objects
 		}
 		public User(IDataReader reader)
 		{
-			while (reader.Read())
-			{
-				_id = (int)reader["UserID"];
-				_email = reader["Email"] as string;
-				_forename = reader["Forename"] as string;
-				_surname = reader["Surname"] as string;
-				_windowsLiveEnabled = (bool)reader["WindowsLiveEnabled"];
-				_windowsLiveId = reader["WindowsLiveID"] as string;
-				_createdDate = (DateTime)reader["CreatedDate"];
-			}
+			_id = (int)reader["UserID"];
+			_email = reader["Email"] as string;
+			_forename = reader["Forename"] as string;
+			_surname = reader["Surname"] as string;
+			_windowsLiveEnabled = (bool)reader["WindowsLiveEnabled"];
+			_windowsLiveId = reader["WindowsLiveID"] as string;
+			_createdDate = (DateTime)reader["CreatedDate"];
 		}
 		#endregion
 
@@ -91,6 +89,26 @@ namespace Nom.DataAccess.Objects
 				UserManager.AddUser(this, out _id, out _createdDate);
 			else
 				UserManager.UpdateUser(this);
+		}
+		public MembershipUser ToMembershipUser()
+		{
+			MembershipUser mu = new MembershipUser(
+				Nom.Common.Constants.MembershipProviders.Nom,
+				Name,
+				ID.Value.ToString(),
+				Email,
+				string.Empty,
+				string.Empty,
+				true,
+				false,
+				CreatedDate,
+				DateTime.MinValue,
+				DateTime.MinValue,
+				DateTime.MinValue,
+				DateTime.MinValue
+			);
+
+			return mu;
 		}
 		public override string ToString()
 		{

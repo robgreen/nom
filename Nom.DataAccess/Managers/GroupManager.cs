@@ -84,6 +84,7 @@ namespace Nom.DataAccess.Managers
 
 					using (IDataReader reader = cmd.ExecuteReader())
 					{
+						reader.Read();
 						return new Group(reader);
 					}
 				}

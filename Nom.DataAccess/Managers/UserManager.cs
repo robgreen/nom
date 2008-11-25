@@ -58,6 +58,26 @@ namespace Nom.DataAccess.Managers
 
 					using (IDataReader reader = cmd.ExecuteReader())
 					{
+						reader.Read();
+						return new User(reader);
+					}
+				}
+			}
+		}
+		public static User GetUser(string email)
+		{
+			using (SqlConnection conn = Helper.GetConnection())
+			{
+				using (SqlCommand cmd = new SqlCommand(Constants.StoredProcedures.UserManager.GetUserByEmail, conn))
+				{
+					cmd.CommandType = CommandType.StoredProcedure;
+					cmd.Parameters.AddWithValue("@Email", email);
+
+					conn.Open();
+
+					using (IDataReader reader = cmd.ExecuteReader())
+					{
+						reader.Read();
 						return new User(reader);
 					}
 				}

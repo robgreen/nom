@@ -1,6 +1,5 @@
 ﻿using System;
 using Nom.Business;
-using Nom.Business.Objects;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 

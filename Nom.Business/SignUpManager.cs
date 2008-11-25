@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Security;
 using System.Web;
 using System.Web.UI;
 using Nom.Common;
@@ -26,7 +27,7 @@ namespace Nom.Business
 			{
 				newUser.Save();
 
-				HttpContext.Current.Session.Add(Constants.Session.CurrentUser, newUser);
+				FormsAuthentication.SetAuthCookie(newUser.Email, false);
 
 				if (wlOptIn)
 					HttpContext.Current.Response.Redirect(WindowsLiveHelper.GetWindowsLiveInviteURL());
@@ -59,6 +60,7 @@ namespace Nom.Business
 
 			if (result == WindowsLiveHelper.ResultStatus.Accepted)
 			{
+				// TODO: Replace this with FormsAuthentication
 				User user = (User)HttpContext.Current.Session[Constants.Session.CurrentUser];
 
 				if (user != null)

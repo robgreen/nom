@@ -3,7 +3,7 @@ using System.IO;
 using System.Net;
 using Newtonsoft.Json;
 
-namespace Nom.Business.Objects
+namespace Nom.DataAccess.Objects
 {
 	public class WLPresence
 	{

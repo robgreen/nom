@@ -8,27 +8,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nom.Web.Pages.View {
+namespace Nom.Web.Controls.Layout {
     
     
-    public partial class GroupView {
+    public partial class PageHeader {
         
         /// <summary>
-        /// litTitle control.
+        /// ctrlUserTools control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litTitle;
-        
-        /// <summary>
-        /// ctrlUsers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Nom.Web.Controls.View.Group.Users ctrlUsers;
+        protected global::Nom.Web.Controls.Layout.UserTools ctrlUserTools;
     }
 }

@@ -5,7 +5,6 @@ using System.Web.UI;
 using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using Nom.Business;
-using Nom.Business.Objects;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 

@@ -77,6 +77,27 @@
     <Compile Include="Controls\Head.ascx.designer.cs">
       <DependentUpon>Head.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Layout\PageHeader.ascx.cs">
+      <DependentUpon>PageHeader.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Layout\PageHeader.ascx.designer.cs">
+      <DependentUpon>PageHeader.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Layout\UserTools.ascx.cs">
+      <DependentUpon>UserTools.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Layout\UserTools.ascx.designer.cs">
+      <DependentUpon>UserTools.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\View\Group\Users.ascx.cs">
+      <DependentUpon>Users.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View\Group\Users.ascx.designer.cs">
+      <DependentUpon>Users.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\View\User\Groups.ascx.cs">
       <DependentUpon>Groups.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,6 +146,13 @@
     </Compile>
     <Compile Include="Pages\SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Util\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Util\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\View\GroupView.aspx.cs">
       <DependentUpon>GroupView.aspx</DependentUpon>
@@ -212,9 +240,13 @@
     <Content Include="Tests\WLUserPresence.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controls\Layout\PageHeader.ascx" />
+    <Content Include="Controls\Layout\UserTools.ascx" />
+    <Content Include="Controls\View\Group\Users.ascx" />
     <Content Include="Controls\View\User\Groups.ascx" />
     <Content Include="Controls\View\User\RecentVenues.ascx" />
     <Content Include="MasterPages\Nom.Master" />
+    <Content Include="Pages\Util\Login.aspx" />
     <Content Include="Pages\View\GroupView.aspx" />
     <Content Include="Pages\View\UserView.aspx" />
     <Content Include="Pages\View\VenueView.aspx" />

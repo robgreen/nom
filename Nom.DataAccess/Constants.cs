@@ -28,10 +28,13 @@ namespace Nom.DataAccess
 			{
 				public const string AddUser = "AddUser";
 				public const string GetUser = "GetUser";
+				public const string GetUserByEmail = "GetUserByEmail";
 				public const string GetUsers = "GetUsers";
 				public const string GetUsersByGroup = "GetUsersByGroup";
 				public const string RemoveUser = "RemoveUser";
 				public const string UpdateUser = "UpdateUser";
+				public const string UpdateUserPassword = "UpdateUserPassword";
+				public const string ValidateUser = "ValidateUser";
 			}
 			public class VenueManager
 			{

@@ -8,54 +8,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nom.Web.MasterPages {
+namespace Nom.Web.Controls.Layout {
     
     
-    public partial class Nom {
+    public partial class UserTools {
         
         /// <summary>
-        /// ctrlHead control.
+        /// plhLoggedIn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Nom.Web.Controls.Head ctrlHead;
+        protected global::System.Web.UI.WebControls.PlaceHolder plhLoggedIn;
         
         /// <summary>
-        /// cphHead control.
+        /// hypUserProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cphHead;
+        protected global::System.Web.UI.WebControls.HyperLink hypUserProfile;
         
         /// <summary>
-        /// form1 control.
+        /// litUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Literal litUserName;
         
         /// <summary>
-        /// ctrlPageHeader control.
+        /// hypLogOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UserControl ctrlPageHeader;
+        protected global::System.Web.UI.WebControls.HyperLink hypLogOut;
         
         /// <summary>
-        /// cphContent control.
+        /// plhLoggedOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder cphContent;
+        protected global::System.Web.UI.WebControls.PlaceHolder plhLoggedOut;
+        
+        /// <summary>
+        /// hypLogIn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hypLogIn;
+        
+        /// <summary>
+        /// hypSignUp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hypSignUp;
     }
 }
