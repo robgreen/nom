@@ -45,6 +45,7 @@ namespace Nom.Web.Pages.View
 		private void SetGroupDetails()
 		{
 			litTitle.Text = ViewGroup.Name;
+			litProfile.Text = ViewGroup.Profile;
 		}
 		#endregion
 	}

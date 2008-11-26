@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.UI.WebControls;
+using Nom.Common;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 
-namespace Nom.Web.Controls.View.User
+namespace Nom.Web.Controls.View
 {
 	public partial class RecentVenues : Nom.Web.Base.BaseControl
 	{
@@ -47,8 +48,10 @@ namespace Nom.Web.Controls.View.User
 			{
 				Venue venue = ((KeyValuePair<Venue, int>)e.Item.DataItem).Key;
 
+				HyperLink hypVenueProfile = (HyperLink)e.Item.FindControl("hypVenueProfile");
 				Literal litTitle = (Literal)e.Item.FindControl("litTitle");
 
+				hypVenueProfile.NavigateUrl = LinkHelper.GetViewVenueURL(venue.ID.Value);
 				litTitle.Text = venue.Name;
 			}
 		}

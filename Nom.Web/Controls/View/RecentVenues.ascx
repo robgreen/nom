@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RecentVenues.ascx.cs" Inherits="Nom.Web.Controls.View.User.RecentVenues" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="RecentVenues.ascx.cs" Inherits="Nom.Web.Controls.View.RecentVenues" %>
 <div id="recentVenues">
 	<h3>Recent noms</h3>
 	<asp:Repeater ID="rptRecentVenues" runat="server">
@@ -7,7 +7,7 @@
 		</HeaderTemplate>
 		<ItemTemplate>
 				<li>
-					<span class="title"><asp:Literal ID="litTitle" runat="server" /></span>
+					<span class="title"><asp:HyperLink ID="hypVenueProfile" runat="server"><asp:Literal ID="litTitle" runat="server" /></asp:HyperLink></span>
 				</li>
 		</ItemTemplate>
 		<FooterTemplate>

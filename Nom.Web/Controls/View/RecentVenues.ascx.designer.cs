@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Nom.Web.Controls.View.User {
+namespace Nom.Web.Controls.View {
     
     
     public partial class RecentVenues {

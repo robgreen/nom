@@ -47,7 +47,7 @@ namespace Nom.Web.Pages.View {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Nom.Web.Controls.View.User.RecentVenues ctrlRecentVenues;
+        protected global::Nom.Web.Controls.View.RecentVenues ctrlRecentVenues;
         
         /// <summary>
         /// ctrlGroups control.

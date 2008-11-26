@@ -84,6 +84,13 @@
     <Compile Include="Controls\Layout\PageHeader.ascx.designer.cs">
       <DependentUpon>PageHeader.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Layout\PrimaryNavigation.ascx.cs">
+      <DependentUpon>PrimaryNavigation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Layout\PrimaryNavigation.ascx.designer.cs">
+      <DependentUpon>PrimaryNavigation.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\Layout\UserTools.ascx.cs">
       <DependentUpon>UserTools.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -98,19 +105,19 @@
     <Compile Include="Controls\View\Group\Users.ascx.designer.cs">
       <DependentUpon>Users.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Controls\View\RecentVenues.ascx.cs">
+      <DependentUpon>RecentVenues.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\View\RecentVenues.ascx.designer.cs">
+      <DependentUpon>RecentVenues.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Controls\View\User\Groups.ascx.cs">
       <DependentUpon>Groups.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Controls\View\User\Groups.ascx.designer.cs">
       <DependentUpon>Groups.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\View\User\RecentVenues.ascx.cs">
-      <DependentUpon>RecentVenues.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Controls\View\User\RecentVenues.ascx.designer.cs">
-      <DependentUpon>RecentVenues.ascx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -241,15 +248,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\Layout\PageHeader.ascx" />
+    <Content Include="Controls\Layout\PrimaryNavigation.ascx" />
     <Content Include="Controls\Layout\UserTools.ascx" />
     <Content Include="Controls\View\Group\Users.ascx" />
+    <Content Include="Controls\View\RecentVenues.ascx" />
     <Content Include="Controls\View\User\Groups.ascx" />
-    <Content Include="Controls\View\User\RecentVenues.ascx" />
     <Content Include="MasterPages\Nom.Master" />
     <Content Include="Pages\Util\Login.aspx" />
     <Content Include="Pages\View\GroupView.aspx" />
     <Content Include="Pages\View\UserView.aspx" />
     <Content Include="Pages\View\VenueView.aspx" />
+    <Content Include="Resources\CSS\Nom.css" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -271,7 +280,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>4526</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4600/</IISUrl>
+          <IISUrl>http://uklon-06001:4600/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>

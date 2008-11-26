@@ -11,24 +11,24 @@
 namespace Nom.Web.Controls.Layout {
     
     
-    public partial class PageHeader {
+    public partial class PrimaryNavigation {
         
         /// <summary>
-        /// ctrlPrimaryNavigation control.
+        /// hypGroupHub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Nom.Web.Controls.Layout.PrimaryNavigation ctrlPrimaryNavigation;
+        protected global::System.Web.UI.WebControls.HyperLink hypGroupHub;
         
         /// <summary>
-        /// ctrlUserTools control.
+        /// hypVenueHub control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Nom.Web.Controls.Layout.UserTools ctrlUserTools;
+        protected global::System.Web.UI.WebControls.HyperLink hypVenueHub;
     }
 }

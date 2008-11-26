@@ -12,7 +12,9 @@
 <body>
     <form id="form1" runat="server">
     	<Nom:PageHeader ID="ctrlPageHeader" runat="server" />
-        <asp:ContentPlaceHolder ID="cphContent" runat="server" />
+    	<div id="content">
+			<asp:ContentPlaceHolder ID="cphContent" runat="server" />
+        </div>
     </form>
 </body>
 </html>

@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants.cs" />
+    <Compile Include="Enums\ItemType.cs" />
     <Compile Include="UserHelper.cs" />
     <Compile Include="LinkHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -11,8 +11,10 @@ namespace Nom.Common
 		{
 			public class Google
 			{
-				public const string Maps = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRRq2mXNz3n83LDt3e2GXTlegSblA";
-				public const string Search = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRRq2mXNz3n83LDt3e2GXTlegSblA";
+				// LOCALHOST public const string Maps = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRRq2mXNz3n83LDt3e2GXTlegSblA";
+				public const string Maps = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRQVN7iafvv_Rc14Ko2xollV1EG9shRDc8D9VuauuFTOQ8ONRysoxF93_A";
+				// LOCALHOST public const string Search = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRRq2mXNz3n83LDt3e2GXTlegSblA";
+				public const string Search = "ABQIAAAAxQvFmNzaQOgPbX7Sz9ygdRQVN7iafvv_Rc14Ko2xollV1EG9shRDc8D9VuauuFTOQ8ONRysoxF93_A";
 			}
 		}
 		public class MembershipProviders

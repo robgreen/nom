@@ -11,6 +11,7 @@ namespace Nom.Common
 		}
 		public class Group
 		{
+			public const string Hub = "/Pages/Hub/GroupHub.aspx";
 			public const string View = "/Pages/View/GroupView.aspx";
 		}
 		public class User
@@ -24,7 +25,30 @@ namespace Nom.Common
 		{
 			public const string Confirmation = "/Pages/Thanks.aspx";
 		}
+		public class Venue
+		{
+			public const string Hub = "/Pages/Hub/VenueHub.aspx";
+			public const string View = "/Pages/View/VenueView.aspx";
+		}
 
+		public static string GetHubGroupURL()
+		{
+			return string.Format("http://{0}{1}",
+				new object[] {
+					Application.Host,
+					Group.Hub
+				}
+			);
+		}
+		public static string GetHubVenueURL()
+		{
+			return string.Format("http://{0}{1}",
+				new object[] {
+					Application.Host,
+					Venue.Hub
+				}
+			);
+		}
 		public static string GetViewGroupURL(int groupId)
 		{
 			return string.Format("http://{0}{1}?{2}={3}",
@@ -44,6 +68,17 @@ namespace Nom.Common
 					User.View,
 					Constants.RequestParameters.ItemID,
 					userId
+				}
+			);
+		}
+		public static string GetViewVenueURL(int venueId)
+		{
+			return string.Format("http://{0}{1}?{2}={3}",
+				new object[] {
+					Application.Host,
+					Venue.View,
+					Constants.RequestParameters.ItemID,
+					venueId
 				}
 			);
 		}

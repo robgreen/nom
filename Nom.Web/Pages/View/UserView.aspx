@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/Nom.Master" CodeBehind="UserView.aspx.cs" Inherits="Nom.Web.Pages.View.UserView" %>
-<%@ Register Src="~/Controls/View/User/RecentVenues.ascx" TagPrefix="Nom" TagName="RecentVenues" %>
+<%@ Register Src="~/Controls/View/RecentVenues.ascx" TagPrefix="Nom" TagName="RecentVenues" %>
 <%@ Register Src="~/Controls/View/User/Groups.ascx" TagPrefix="Nom" TagName="Groups" %>
 
 <asp:Content ContentPlaceHolderID="cphContent" runat="server">
