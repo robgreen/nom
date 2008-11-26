@@ -1,5 +1,6 @@
 ﻿using System;
 using Nom.Business;
+using Nom.Business.Caching;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 
@@ -41,7 +42,8 @@ namespace Nom.Web.Pages.View
 		{
 			if (ItemID.HasValue)
 			{
-				ViewUser = UserManager.GetUser(ItemID.Value);
+
+				ViewUser = CacheHelper.GetUser(ItemID.Value);
 
 				if (ViewUser != null)
 					ViewUserPresence = WindowsLiveHelper.GetWindowsLivePresence(ViewUser);
@@ -56,10 +58,14 @@ namespace Nom.Web.Pages.View
 		{
 			litTitle.Text = ViewUser.Name;
 			litJoined.Text = ViewUser.CreatedDate.ToString("MMM yy");
-			imgWLIcon.ImageUrl = ViewUserPresence.Icon.URL;
-			imgWLIcon.Height = ViewUserPresence.Icon.Height;
-			imgWLIcon.Width = ViewUserPresence.Icon.Width;
-			imgWLIcon.AlternateText = ViewUserPresence.StatusText;
+
+			if (ViewUserPresence != null)
+			{
+				imgWLIcon.ImageUrl = ViewUserPresence.Icon.URL;
+				imgWLIcon.Height = ViewUserPresence.Icon.Height;
+				imgWLIcon.Width = ViewUserPresence.Icon.Width;
+				imgWLIcon.AlternateText = ViewUserPresence.StatusText;
+			}
 		}
 		#endregion
 	}

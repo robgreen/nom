@@ -105,6 +105,39 @@ namespace Nom.DataAccess.Managers
 			return venues;
 		}
 
+		public static Dictionary<Venue, int> GetVenuesForGroup(Group group)
+		{
+			return GetVenuesForGroup(group, false);
+		}
+		public static Dictionary<Venue, int> GetVenuesForGroup(Group group, bool limit)
+		{
+			return GetVenuesForGroup(group.ID.Value, limit);
+		}
+		public static Dictionary<Venue, int> GetVenuesForGroup(int groupId, bool limit)
+		{
+			// TODO: Fix the way this is achieved and also the rank etc
+
+			Dictionary<Venue, int> groupVenues = new Dictionary<Venue, int>();
+
+			using (SqlConnection conn = Helper.GetConnection())
+			{
+				using (SqlCommand cmd = new SqlCommand(Constants.StoredProcedures.VenueManager.GetGroupRecentVenues, conn))
+				{
+					cmd.CommandType = CommandType.StoredProcedure;
+					cmd.Parameters.AddWithValue("@GroupID", groupId);
+					conn.Open();
+
+					using (IDataReader reader = cmd.ExecuteReader())
+					{
+						while (reader.Read())
+							groupVenues.Add(new Venue(reader), 0);
+					}
+				}
+			}
+
+			return groupVenues;
+		}
+
 		public static Dictionary<Venue, int> GetVenuesForUser(User user)
 		{
 			return GetVenuesForUser(user, false);

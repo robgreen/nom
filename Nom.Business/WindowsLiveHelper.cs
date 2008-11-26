@@ -21,16 +21,23 @@ namespace Nom.Business
 
 		public static WLPresence GetWindowsLivePresence(User user)
 		{
-			if (!string.IsNullOrEmpty(user.WindowsLiveID))
+			if (user.WindowsLiveEnabled)
 			{
-				HttpWebRequest hwRequest = (HttpWebRequest)WebRequest.Create(GetWindowsLivePresenceURL(user.WindowsLiveID));
-				HttpWebResponse hwResponse = (HttpWebResponse)hwRequest.GetResponse();
+				if (!string.IsNullOrEmpty(user.WindowsLiveID))
+				{
+					HttpWebRequest hwRequest = (HttpWebRequest)WebRequest.Create(GetWindowsLivePresenceURL(user.WindowsLiveID));
+					HttpWebResponse hwResponse = (HttpWebResponse)hwRequest.GetResponse();
 
-				return new WLPresence(hwResponse);
+					return new WLPresence(hwResponse);
+				}
+				else
+				{
+					throw new Exception("User has does not have a valid Windows Live identifier.");
+				}
 			}
 			else
 			{
-				throw new Exception("User has not activated Windows Live support.");
+				return null;
 			}
 		}
 

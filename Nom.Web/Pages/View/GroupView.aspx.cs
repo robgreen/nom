@@ -1,5 +1,6 @@
 ﻿using System;
 using Nom.Business;
+using Nom.Business.Caching;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 
@@ -35,11 +36,12 @@ namespace Nom.Web.Pages.View
 		{
 			if (ItemID.HasValue)
 			{
-				ViewGroup = GroupManager.GetGroup(ItemID.Value);
+				ViewGroup = CacheHelper.GetGroup(ItemID.Value);
 			}
 		}
 		private void BindControls()
 		{
+			ctrlRecentVenues.Group = ViewGroup;
 			ctrlUsers.Group = ViewGroup;
 		}
 		private void SetGroupDetails()

@@ -205,6 +205,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
+    <Compile Include="Tests\CacheStats.aspx.cs">
+      <DependentUpon>CacheStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tests\CacheStats.aspx.designer.cs">
+      <DependentUpon>CacheStats.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tests\GMGeoCode.aspx.cs">
       <DependentUpon>GMGeoCode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,6 +266,7 @@
     <Content Include="Pages\View\UserView.aspx" />
     <Content Include="Pages\View\VenueView.aspx" />
     <Content Include="Resources\CSS\Nom.css" />
+    <Content Include="Tests\CacheStats.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

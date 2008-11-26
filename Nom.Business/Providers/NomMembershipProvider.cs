@@ -8,6 +8,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web;
 using System.Web.Security;
+using Nom.Business.Caching;
 using Nom.Common;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
@@ -64,7 +65,7 @@ namespace Nom.Business.Providers
 		}
 		public override MembershipUser GetUser(object providerUserKey, bool userIsOnline)
 		{
-			User user = UserManager.GetUser(int.Parse(providerUserKey.ToString()));
+			User user = CacheHelper.GetUser(int.Parse(providerUserKey.ToString()));
 
 			if (user != null)
 				return user.ToMembershipUser();

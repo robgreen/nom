@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Security;
+using Nom.Business.Caching;
 using Nom.DataAccess.Managers;
 using Nom.DataAccess.Objects;
 
@@ -16,7 +17,7 @@ namespace Nom.Business
 
 			if (mu != null)
 			{
-				User user = UserManager.GetUser((int)mu.ProviderUserKey);
+				User user = CacheHelper.GetUser((int)mu.ProviderUserKey);
 
 				if (user != null)
 					return user;

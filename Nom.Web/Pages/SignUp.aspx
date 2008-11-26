@@ -2,6 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="cphContent" runat="server">
 	<h2>Sign Up</h2>
+	<p>Note: There is currently no error validation on this form.</p>
 	<div class="fieldRow">
 		<asp:Label ID="lblForename" AssociatedControlID="txtForename" runat="server">Forename:</asp:Label>
 		<asp:TextBox ID="txtForename" TextMode="SingleLine" runat="server" />
@@ -17,6 +18,10 @@
 	<div class="fieldRow">
 		<asp:Label ID="lblPassword" AssociatedControlID="txtPassword" runat="server">Password:</asp:Label>
 		<asp:TextBox ID="txtPassword" TextMode="Password" runat="server" />
+	</div>
+	<div class="fieldRow">
+		<asp:Label ID="lblConfirmPassword" AssociatedControlID="txtPasswordConfirm" runat="server">Confirm Password:</asp:Label>
+		<asp:TextBox ID="txtPasswordConfirm" TextMode="Password" runat="server" />
 	</div>
 	<div class="fieldRow">
 		<asp:Label ID="lblWLOptIn" AssociatedControlID="chkWLOptIn" runat="server">Receive alerts via Windows Live Messenger:</asp:Label>

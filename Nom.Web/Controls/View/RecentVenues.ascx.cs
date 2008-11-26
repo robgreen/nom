@@ -10,6 +10,11 @@ namespace Nom.Web.Controls.View
 	public partial class RecentVenues : Nom.Web.Base.BaseControl
 	{
 		#region Public Properties
+		public Nom.DataAccess.Objects.Group Group
+		{
+			get;
+			set;
+		}
 		public Nom.DataAccess.Objects.User User
 		{
 			get;
@@ -22,7 +27,18 @@ namespace Nom.Web.Controls.View
 		{
 			base.OnLoad(e);
 
-			Dictionary<Venue, int> venues = VenueManager.GetVenuesForUser(User);
+			Dictionary<Venue, int> venues = new Dictionary<Venue, int>();
+
+			if (Group != null)
+			{
+				venues = VenueManager.GetVenuesForGroup(Group);
+			}
+			else if (User != null)
+			{
+				venues = VenueManager.GetVenuesForUser(User);
+
+				litUserFirstName.Text = User.Forename;
+			}
 
 			if (venues.Count > 0)
 			{
@@ -32,8 +48,6 @@ namespace Nom.Web.Controls.View
 			}
 			else
 			{
-				litUserFirstName.Text = User.Forename;
-
 				plhNoRecentVenues.Visible = true;
 			}
 		}

@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caching\CacheHelper.cs" />
+    <Compile Include="Caching\CacheStatistic.cs" />
+    <Compile Include="Caching\GroupCache.cs" />
+    <Compile Include="Caching\UserCache.cs" />
     <Compile Include="GroupHelper.cs" />
     <Compile Include="Providers\NomMembershipProvider.cs" />
     <Compile Include="SessionHelper.cs" />
